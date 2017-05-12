@@ -1,0 +1,17 @@
+{
+  "name": "harapeko-mogami-linebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "line-messaging": "^1.1.8",
+    "request": "^2.79.0",
+    "xml2js": "^0.4.17",
+    "xml2json": "^0.10.0"
+  }
+}
