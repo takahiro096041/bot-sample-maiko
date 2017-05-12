@@ -2,7 +2,7 @@
 const Message = require('./lib/message');
 const Postback = require('./lib/postback');
 
-module.exports.handler = (event, context, callback) => {
+module.exports.handler = function(event, context, callback) {
   console.log(JSON.stringify(JSON.parse(event.body)));
   const events = JSON.parse(event.body).events;
   // LINEBotは同時に複数のメッセージが投げられることがある
@@ -19,7 +19,7 @@ module.exports.handler = (event, context, callback) => {
     }
   });
   callback(res);
-};
+}
 
 const res = {
   statusCode: 200,
