@@ -1,4 +1,4 @@
-service: harapekomogami
+service: maiko-linebot
 
 provider:
   name: aws
