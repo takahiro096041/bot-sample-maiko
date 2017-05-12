@@ -3,7 +3,7 @@ const Message = require('./lib/message');
 const Postback = require('./lib/postback');
 
 module.exports.handler = (event, context, callback) => {
-  console.log(JSON.stringify(event));
+  console.log(JSON.stringify(JSON.parse(event.body)));
   const events = JSON.parse(event.body).events;
   // LINEBotは同時に複数のメッセージが投げられることがある
   events.forEach(function(incident) {
