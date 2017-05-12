@@ -3,6 +3,7 @@ service: maiko-linebot
 provider:
   name: aws
   runtime: nodejs4.3
+  profile: ${opt:profile, self:custom.defaultProfile}
   stage: ${opt:stage}
   region: us-east-2
   memorySize: 128
