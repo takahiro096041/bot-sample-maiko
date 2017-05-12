@@ -1,0 +1,39 @@
+{
+  "sake": [{
+      "name": "",
+      "desc": "",
+      "alcohol": 0.05,
+      "url": ""
+    },
+    {
+      "name": "",
+      "desc": "",
+      "alcohol": 0.05,
+      "url": ""
+    }
+  ],
+  "cocktail": [{
+      "name": "",
+      "desc": "",
+      "alcohol": 0.05,
+      "url": ""
+    },
+    {
+      "name": "",
+      "desc": "",
+      "alcohol": 0.05,
+      "url": ""
+    }
+  ],
+  "beer": [{
+    "name": "",
+    "desc": "",
+    "alcohol": 0.05,
+    "url": ""
+  }, {
+    "name": "",
+    "desc": "",
+    "alcohol": 0.05,
+    "url": ""
+  }]
+}
