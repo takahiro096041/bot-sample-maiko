@@ -1,4 +1,3 @@
-'use strict';
 const Message = require('./lib/message');
 const Postback = require('./lib/postback');
 
