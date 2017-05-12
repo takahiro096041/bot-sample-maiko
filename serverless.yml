@@ -18,6 +18,9 @@ provider:
         - dynamodb:DeleteItem
       Resource: arn:aws:dynamodb:${self:provider.region}:*:table/*
 
+include:
+  - lib/**
+
 functions:
   hello:
     handler: handler.handler

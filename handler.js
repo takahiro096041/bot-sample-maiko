@@ -1,24 +1,25 @@
 'use strict';
-const MessageHandler = require('./lib/messageHandler');
+const Message = require('./lib/message');
+const Postback = require('./lib/postback');
 
 module.exports.handler = (event, context, callback) => {
   console.log(JSON.stringify(event));
-  let events = JSON.parse(event.body).events;
+  const events = JSON.parse(event.body).events;
   // LINEBotは同時に複数のメッセージが投げられることがある
   events.forEach(function(incident) {
     if (incident.type == "message") {
       switch (incident.message.type) {
         case "text":
-          MessageHandler.text(incident);
+          Message.handle(incident);
           break;
         default:
       }
-    }else if(incident.type == 'postback') {
-      MessageHandler.postback(incident);
+    } else if (incident.type == 'postback') {
+      Postback.handle(incident);
     }
   });
   callback(res);
-}
+};
 
 const res = {
   statusCode: 200,
